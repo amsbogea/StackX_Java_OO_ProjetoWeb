@@ -15,6 +15,8 @@ public class IdadeE_Peso_IF {
 		System.out.println("Digite o peso");
 		peso = ler.nextDouble();
 		
+		ler.close();
+		
 		if(idade <20 && peso <= 60) {
 			System.out.println("Grupo de Risco 9");
 		}else if(idade < 20 && peso > 60 && peso <=90) {

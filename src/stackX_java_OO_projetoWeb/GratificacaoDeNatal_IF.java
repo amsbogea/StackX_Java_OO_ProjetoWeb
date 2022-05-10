@@ -15,6 +15,8 @@ public class GratificacaoDeNatal_IF {
 		  
 		  System.out.println("Informe o numero de horas faltantes."); HF =
 		  leitor.nextDouble();
+		  
+		  leitor.close();
 		 
 //		HE = 2500;
 //		HF = 250;
