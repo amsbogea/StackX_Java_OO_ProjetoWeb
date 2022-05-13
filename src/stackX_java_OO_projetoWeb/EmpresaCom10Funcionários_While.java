@@ -10,10 +10,15 @@ public class EmpresaCom10Funcion·rios_While {
 		String categoria;
 		String turno;
 		double salMinimo = 450.00;
+<<<<<<< HEAD
 		double salPorHora = 0;
 		int horasTrabalhadas;
 		double salarioMes;
 		double auxilioAlimentacao;
+=======
+		double horaTrabalhada = 0;
+
+>>>>>>> parent of 47deaed (empresa com 10 funcion√°rios mudan√ßas)
 		Scanner in = new Scanner(System.in);
 		
 		System.out.print("Digite a quantidade de funcionarios: ");
@@ -50,6 +55,7 @@ public class EmpresaCom10Funcion·rios_While {
 		System.out.print("Digite a quantidade de horas trabalhadas do fucnion·rio: ");
 			horasTrabalhadas = in.nextInt();
 		
+<<<<<<< HEAD
 		if (categoria.equals("G")) {
 			if (turno.endsWith("N")) {
 				salPorHora = +(salMinimo * 0.18);
@@ -70,6 +76,20 @@ public class EmpresaCom10Funcion·rios_While {
 			auxilioAlimentacao = salarioMes * 0.15;
 		} else {
 			auxilioAlimentacao = salarioMes * 0.05;
+=======
+		if(categoria.equals("G") && turno.equals("N")) {
+			horaTrabalhada =  + (salMinimo *0.18);
+			System.out.println(horaTrabalhada);
+		}else if(categoria.equals("G") && turno.equals("M") || turno.equals("V")) {
+			horaTrabalhada =  + (salMinimo *0.15);
+			System.out.println(horaTrabalhada);
+		}else if(categoria.equals("O") && turno.equals("N")) {
+			horaTrabalhada =  + (salMinimo *0.13);
+			System.out.println(horaTrabalhada);
+		}else if(categoria.equals("O") && turno.equals("M") || turno.equals("V")) {
+			horaTrabalhada =  + (salMinimo *0.10);
+			System.out.println(horaTrabalhada);
+>>>>>>> parent of 47deaed (empresa com 10 funcion√°rios mudan√ßas)
 		}
 		
 		System.out.println("--------------------------------------------------------------------------------");
